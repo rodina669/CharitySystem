@@ -5,7 +5,7 @@ namespace CharitySystem
         public ReceiptItem CreateReceiptItem(Donations itemDonation)
         {
             ReceiptItem receipt = new ReceiptItem();
-            receipt.IdReceipt = ItemDonation.count;
+            receipt.IdReceipt = itemDonation.IdDonation;
             receipt.IdDonation = itemDonation.IdDonation;
             receipt.NameDonor = itemDonation.NameDonor;
             receipt.IdActivity = itemDonation.IdActivity;
